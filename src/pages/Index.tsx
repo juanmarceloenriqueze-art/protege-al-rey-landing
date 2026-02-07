@@ -1,0 +1,19 @@
+import HeroSection from "@/components/HeroSection";
+import PricingSection from "@/components/PricingSection";
+import ShopSection from "@/components/ShopSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+
+const Index = () => {
+  return (
+    <main className="min-h-screen bg-background">
+      <HeroSection />
+      <PricingSection />
+      <ShopSection />
+      <ContactSection />
+      <Footer />
+    </main>
+  );
+};
+
+export default Index;
