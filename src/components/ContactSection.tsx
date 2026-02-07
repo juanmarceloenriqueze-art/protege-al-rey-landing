@@ -143,7 +143,7 @@ if (isMobile) {
                 </div>
                 <div>
                   <p className="font-semibold">WhatsApp</p>
-                  <p className="text-muted-foreground">+593 99 999 9999</p>
+                  <p className="text-muted-foreground">+593 98 237 5944</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-foreground">
@@ -152,7 +152,7 @@ if (isMobile) {
                 </div>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-muted-foreground">info@protegealrey.com</p>
+                  <p className="text-muted-foreground">juanmarceloenriqueze@gmail.com</p>
                 </div>
               </div>
             </div>
