@@ -115,11 +115,11 @@ const Footer = () => {
                 </p>
                 <p className="flex items-center justify-center md:justify-end gap-2">
                   <Phone className="w-4 h-4 text-gold-dark" />
-                  +593 99 999 9999
+                  +593 98 237 5944
                 </p>
                 <p className="flex items-center justify-center md:justify-end gap-2">
                   <Mail className="w-4 h-4 text-gold-dark" />
-                  info@protegealrey.com
+                  juanmarceloenriqueze@gmail.com
                 </p>
               </div>
               {/* Social */}
