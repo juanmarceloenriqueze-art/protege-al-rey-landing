@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
@@ -10,31 +11,38 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email || !email.includes("@")) {
-      toast({
-        title: "Error",
-        description: "Por favor ingresa un correo válido",
-        variant: "destructive",
-      });
-      return;
-    }
+const handleNewsletterSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    setIsSubmitting(true);
-    
-    // Simulate submission
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    
+  try {
+    await emailjs.send(
+      "service_og4x0yu",
+      "template_8xn7dqr",
+      {
+        email: email,
+        date: new Date().toLocaleString("es-EC"),
+      },
+      "EcVUkDAxoPGHMgbb7"
+    );
+
     toast({
-      title: "¡Suscrito!",
-      description: "Recibirás nuestras tácticas semanales en tu correo.",
+      title: "¡Suscripción exitosa! 🎉",
+      description: "Ahora recibirás novedades y consejos de ajedrez.",
     });
-    
+
     setEmail("");
+  } catch (error) {
+    toast({
+      title: "Error al suscribirse",
+      description: "Inténtalo nuevamente en unos segundos.",
+      variant: "destructive",
+    });
+  } finally {
     setIsSubmitting(false);
-  };
+  }
+};
+
 
   return (
     <footer className="bg-card border-t border-primary/30">
@@ -49,23 +57,20 @@ const Footer = () => {
             <p className="text-foreground/70 mb-6">
               Suscríbete para recibir consejos, estrategias y noticias del club directamente en tu correo.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Tu correo electrónico"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="bg-input border-border focus:border-primary flex-1"
-              />
-              <Button 
-                type="submit" 
-                variant="default"
-                disabled={isSubmitting}
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                {isSubmitting ? "..." : "Suscribirse"}
-              </Button>
-            </form>
+            <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
+  <Input
+    type="email"
+    placeholder="Tu correo electrónico"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    required
+  />
+  <Button type="submit" disabled={isSubmitting}>
+    {isSubmitting ? "Enviando..." : "Suscribirse"}
+  </Button>
+</form>
+
+
           </div>
         </div>
       </div>
@@ -115,11 +120,11 @@ const Footer = () => {
                 </p>
                 <p className="flex items-center justify-center md:justify-end gap-2">
                   <Phone className="w-4 h-4 text-gold-dark" />
-                  +593 99 999 9999
+                  +593 98 237 5944
                 </p>
                 <p className="flex items-center justify-center md:justify-end gap-2">
                   <Mail className="w-4 h-4 text-gold-dark" />
-                  info@protegealrey.com
+                  juanmarceloenriqueze@gmail.com.com
                 </p>
               </div>
               {/* Social */}
