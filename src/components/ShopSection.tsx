@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ShoppingBag } from "lucide-react";
+import camiseta from "@/assets/products/polo-PAR.png";
+import tablero from "@/assets/products/tablero-PAR.png";
+import gorra from "@/assets/products/gorra-PAR.png";
+
 
 const products = [
   {
@@ -8,21 +12,21 @@ const products = [
     name: "Camiseta Oficial Protege al Rey",
     price: 25,
     description: "Camiseta de algodón premium con el escudo del club",
-    image: "🎽",
+    image: camiseta,
   },
   {
     id: 2,
     name: "Tablero Pro",
     price: 45,
     description: "Tablero profesional de vinilo enrollable con piezas",
-    image: "♟️",
+    image: tablero,
   },
   {
     id: 3,
     name: "Gorra del Club",
     price: 15,
     description: "Gorra bordada con el logo oficial del club",
-    image: "🧢",
+    image: gorra,
   },
 ];
 
@@ -58,9 +62,14 @@ const ShopSection = () => {
               className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 shadow-epic overflow-hidden group"
             >
               {/* Product Image */}
-              <div className="h-48 bg-navy-light flex items-center justify-center text-7xl group-hover:scale-110 transition-transform duration-300">
-                {product.image}
-              </div>
+              <div className="h-48 bg-navy-light flex items-center justify-center overflow-hidden">
+  <img
+    src={product.image}
+    alt={product.name}
+    className="h-full object-contain transition-transform duration-300 group-hover:scale-110"
+  />
+</div>
+
 
               <CardContent className="p-6">
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">
