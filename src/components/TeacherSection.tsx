@@ -1,7 +1,7 @@
 "use client";
 
 import { Crown, GraduationCap, Award } from "lucide-react";
-import teacherPhoto from "@/assets/teacher/daniel-tapia.jpg";
+import teacherPhoto from "@/assets/teacher/david-tapia.png";
 
 const TeacherSection = () => {
   return (
