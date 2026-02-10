@@ -68,12 +68,12 @@ const HeroSection = () => {
           <div className="w-full max-w-md bg-navy/90 backdrop-blur-sm rounded-xl py-4 px-6 border border-primary/30">
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">50+</p>
-                <p className="text-sm text-foreground/80">Estudiantes</p>
+                <p className="text-3xl font-bold text-primary">30</p>
+                <p className="text-sm text-foreground/80">Cupos</p>
               </div>
 
               <div className="text-center border-x border-primary/30">
-                <p className="text-3xl font-bold text-primary">3</p>
+                <p className="text-3xl font-bold text-primary">10</p>
                 <p className="text-sm text-foreground/80">Años exp.</p>
               </div>
 
