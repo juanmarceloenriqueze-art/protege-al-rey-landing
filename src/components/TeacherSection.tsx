@@ -1,7 +1,7 @@
 "use client";
 
 import { Crown, GraduationCap, Award } from "lucide-react";
-import teacherPhoto from "@/assets/teacher/david-tapia.png";
+import teacherPhoto from "@/assets/teacher/david-tapia1.jpg";
 
 const TeacherSection = () => {
   return (
@@ -21,7 +21,7 @@ const TeacherSection = () => {
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Formación sólida, experiencia real y pasión por enseñar ajedrez a niños y jóvenes.
+            Formación sólida, 10 años de experiencia y pasión por enseñar ajedrez a niños y jóvenes.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const TeacherSection = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/40 to-transparent blur-xl" />
               <img
                 src={teacherPhoto}
-                alt="Daniel Tapia - Profesor de Ajedrez"
+                alt="David Tapia - Profesor de Ajedrez"
                 className="relative w-72 md:w-80 rounded-2xl shadow-2xl object-cover"
               />
             </div>
@@ -42,28 +42,28 @@ const TeacherSection = () => {
           {/* Info */}
           <div>
             <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Daniel Tapia
+              David Tapia
             </h3>
 
             <ul className="space-y-4 text-foreground/80">
               <li className="flex items-start gap-3">
                 <Award className="w-5 h-5 text-primary mt-1" />
                 <span>
-                  <strong>Maestro con ELO 2208</strong>, con amplia experiencia competitiva.
+                  <strong>Campeón Ajedrez Universitario</strong>, docente entrenador en varias instituciones educativas de Quito. 
                 </span>
               </li>
 
               <li className="flex items-start gap-3">
                 <GraduationCap className="w-5 h-5 text-primary mt-1" />
                 <span>
-                  Profesor del <strong>Club de Ajedrez del Colegio ISM</strong>.
+                  Campeón <strong>de varios Torneos IRT</strong>.
                 </span>
               </li>
 
               <li className="flex items-start gap-3">
                 <GraduationCap className="w-5 h-5 text-primary mt-1" />
                 <span>
-                  Profesor del <strong>Club de Ajedrez del Colegio Ortega y Gasset</strong>.
+                  Profesor niveles <strong>inicial, intermedio y avanzado</strong>.
                 </span>
               </li>
             </ul>
