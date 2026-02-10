@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <div className="py-10 bg-foreground">
+      <div className="py-10 bg-foreground text-background">
         <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
 
           {/* Brand */}
@@ -89,9 +89,9 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="font-semibold mb-4">Enlaces</h4>
             <ul className="space-y-2">
-              <li><a href="#planes">Planes</a></li>
-              <li><a href="#tienda">Tienda</a></li>
-              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#planes" className="hover:text-primary transition">Planes</a></li>
+              <li><a href="#tienda" className="hover:text-primary transition">Tienda</a></li>
+              <li><a href="#contacto" className="hover:text-primary transition">Contacto</a></li>
             </ul>
           </div>
 
@@ -101,7 +101,7 @@ const Footer = () => {
               <MapPin className="w-4 h-4" /> Quito
             </p>
             <p className="flex justify-center md:justify-end gap-2">
-              <Phone className="w-4 h-4" /> +593 99 999 9999
+              <Phone className="w-4 h-4" /> +593 98 237 5944
             </p>
             <p className="flex justify-center md:justify-end gap-2">
               <Mail className="w-4 h-4" /> juanmarceloenriqueze@gmail.com
