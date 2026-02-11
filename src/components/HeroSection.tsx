@@ -14,7 +14,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
+    <section className="relative z-0 min-h-screen py-32 md:py-40 overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
