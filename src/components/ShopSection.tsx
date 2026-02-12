@@ -10,14 +10,14 @@ const products = [
   {
     id: 1,
     name: "Camiseta Oficial Protege al Rey",
-    price: 25,
+    price: 15,
     description: "Camiseta de algodón premium con el escudo del club",
     image: camiseta,
   },
   {
     id: 2,
     name: "Tablero Pro",
-    price: 45,
+    price: 22,
     description: "Tablero profesional de vinilo enrollable con piezas",
     image: tablero,
   },
