@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ShoppingBag } from "lucide-react";
-import camiseta from "@/assets/products/polo-PAR.png";
-import tablero from "@/assets/products/tablero-PAR.png";
-import gorra from "@/assets/products/gorra-PAR.png";
+import camiseta from "@/assets/products/polo-ninos.jpg";
+import tablero from "@/assets/products/tablero-venta.jpg";
+import gorra from "@/assets/products/gorra-logo.jpg";
 
 
 const products = [

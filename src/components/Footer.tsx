@@ -98,7 +98,7 @@ const Footer = () => {
           {/* Contact */}
           <div className="text-center md:text-right space-y-2">
             <p className="flex justify-center md:justify-end gap-2">
-              <MapPin className="w-4 h-4" /> Quito
+              <MapPin className="w-4 h-4" /> Barrio El Edén, De los Manzanos E13-274 y César Terán López
             </p>
             <p className="flex justify-center md:justify-end gap-2">
               <Phone className="w-4 h-4" /> +593 98 237 5944
