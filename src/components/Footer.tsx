@@ -98,7 +98,7 @@ const Footer = () => {
           {/* Contact */}
           <div className="text-center md:text-right space-y-2">
             <p className="flex justify-center md:justify-end gap-2">
-              <MapPin className="w-4 h-4" /> Barrio El Edén, De los Fresnos E13-247 y De Las Mentas
+              <MapPin className="w-4 h-4" /> Barrio El Edén, De las Viñas E13-247 y De Las Mentas
             </p>
             <p className="flex justify-center md:justify-end gap-2">
               <Phone className="w-4 h-4" /> +593 98 237 5944

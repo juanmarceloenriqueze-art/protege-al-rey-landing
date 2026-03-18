@@ -134,7 +134,7 @@ if (isMobile) {
                 </div>
                 <div>
                   <p className="font-semibold">Ubicación</p>
-                  <p className="text-muted-foreground">Barrio El Edén, De los Fresnos E13-247 y De Las Mentas</p>
+                  <p className="text-muted-foreground">Barrio El Edén, De las Viñas E13-247 y De Las Mentas</p>
                 </div>
               </div>
               <div className="flex items-center gap-4 text-foreground">
