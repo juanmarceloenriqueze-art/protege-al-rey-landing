@@ -5,13 +5,13 @@ import { Check, Crown, Shield, Star } from "lucide-react";
 const plans = [
   {
     name: "Plan Estratega",
-    price: 30,
+    price: 40,
     period: "mes",
     description: "Ideal para comenzar el camino del ajedrez",
     features: [
-      "2 clases por semana",
+      "2 clases online por semana",
+      "1 clase presencial Sábado",
       "Material didáctico incluido",
-      "Acceso a torneos internos",
       "Seguimiento del progreso",
       "Plataforma digital disponible",
     ],
@@ -20,16 +20,16 @@ const plans = [
   },
   {
     name: "Plan Maestro",
-    price: 40,
+    price: 50,
     period: "mes",
     description: "Para quienes buscan la excelencia",
     features: [
-      "3 clases por semana",
-      "Material didáctico incluido",
+      "3 clases online por semana",
+      "1 clase presencial Sábado",,
       "Acceso a torneos internos y externos",
       "Clases de táctica avanzada",
       "Análisis de partidas personalizado",
-      "Camiseta oficial del club",
+      "Camiseta oficial del club*",
       "Plataforma digital disponible",
     ],
     icon: Crown,
