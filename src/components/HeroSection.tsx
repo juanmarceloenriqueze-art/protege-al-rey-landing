@@ -48,13 +48,13 @@ const HeroSection = () => {
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-foreground mb-4 animate-fade-in-up delay-200">
           <span className="text-primary font-semibold">
-            Únete a nuestras fuerzas
+            Programa de Iniciación al Ajedrez · Niños de 6 a 12 años
           </span>
         </p>
 
         <p className="text-base md:text-lg text-foreground/80 max-w-2xl mx-auto mb-8 animate-fade-in-up delay-300">
-          Somos un club de ajedrez para niños y jóvenes donde aprender ajedrez se
-          convierte en una misión.
+          Un programa para principiantes, en grupos reducidos de máximo 6
+          alumnos, donde aprender ajedrez se convierte en una misión.
         </p>
 
         {/* CTA */}
@@ -68,18 +68,18 @@ const HeroSection = () => {
           <div className="w-full max-w-md bg-navy/90 backdrop-blur-sm rounded-xl py-4 px-6 border border-primary/30">
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">30</p>
-                <p className="text-sm text-foreground/80">Cupos</p>
+                <p className="text-3xl font-bold text-primary">6–12</p>
+                <p className="text-sm text-foreground/80">Años</p>
               </div>
 
               <div className="text-center border-x border-primary/30">
-                <p className="text-3xl font-bold text-primary">10</p>
-                <p className="text-sm text-foreground/80">Años exp.</p>
+                <p className="text-3xl font-bold text-primary">6</p>
+                <p className="text-sm text-foreground/80">Alumnos máx.</p>
               </div>
 
               <div className="text-center">
-                <p className="text-3xl font-bold text-primary">100%</p>
-                <p className="text-sm text-foreground/80">Dedicación</p>
+                <p className="text-3xl font-bold text-primary">$60</p>
+                <p className="text-sm text-foreground/80">Mensual</p>
               </div>
             </div>
           </div>

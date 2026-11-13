@@ -21,28 +21,6 @@ const noticias = [
     description:
       "La Casa Comunal del Barrio EL Eden nos respalda y nos permite usar sus instalaciones.",
   },
-  {
-    image: "/news/cupos.jpg",
-    alt: "Protege al Rey – Cupos limitados",
-    title: "Cupos limitados",
-    description:
-      "Abrimos solo 30 cupos divididos en dos grupos de 15 alumnos para garantizar una enseñanza personalizada y de calidad.",
-  },
-  {
-    image: "/news/horarios.jpg",
-    alt: "Horarios oficiales",
-    title: "Horarios de clases",
-    description:
-      "Las clases se dictan lunes, martes y viernes. Grupo 1 de 17:00 a 18:00 y Grupo 2 de 18:00 a 19:00.",
-  },
-  {
-    image: "/news/inauguracion.jpg",
-    alt: "Inauguración del club",
-    title: "Inauguración oficial",
-    description:
-      "El club Protege al Rey abre oficialmente sus puertas el 2 de marzo. ¡Estás invitado a formar parte!",
-  },
-
 ];
 
 const NoticiasSection = () => {
